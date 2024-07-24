@@ -1,0 +1,25 @@
+{
+    "editor.fontFamily": "Cascadia Code",
+    "files.autoSave": "afterDelay",
+    "workbench.colorTheme": "Just Black",
+    "editor.cursorStyle": "block",
+    "workbench.sideBar.location": "right",
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.productIconTheme": "icons-carbon",
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "notebook.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnPaste": true,
+    "editor.fontWeight": "normal",
+    "editor.fontSize": 13,
+    "editor.fontLigatures": true,
+    "workbench.colorCustomizations": {
+      "editor.foreground": "#FFFFFF",
+      "editorIndentGuide.background1": "#FFFFFF",
+    }
+}
