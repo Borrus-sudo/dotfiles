@@ -16,13 +16,40 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnPaste": true,
     "editor.fontWeight": "normal",
-    "editor.fontSize": 13,
-    "editor.fontLigatures": true,
-    "workbench.colorCustomizations": {
-      "editor.foreground": "#FFFFFF",
-      "editorIndentGuide.background1": "#FFFFFF",
+    "editor.fontSize": 14,
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": false,
+        "strings": true
     },
+    "editor.fontLigatures": true,
+    "editor.minimap.enabled": false,
+    "workbench.colorCustomizations": {
+        //   "editor.foreground": "#FFFFFF",
+        // "editor.guides.indentation": false
+        "editorIndentGuide.background1": "#292D3E",
+        "editorIndentGuide.activeBackground1": "#292D3E",
+        "editorLineNumber.activeForeground": "#292D3E",
+        "editorLineNumber.foreground": "#292D3E"
+    },
+
     "prettier.tabWidth": 4,
     "prettier.singleQuote": true,
-    "prettier.trailingComma": "es5"
+
+    "[rust]": {
+        "editor.defaultFormatter": "jinxdash.prettier-rust"
+    },
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    "git.autofetch": true,
+    "[typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "svelte.enable-ts-plugin": true,
+    "editor.renderLineHighlight": "none",
+    "[svelte]": {
+        "editor.defaultFormatter": "svelte.svelte-vscode"
+    },
+    "redhat.telemetry.enabled": false
 }
