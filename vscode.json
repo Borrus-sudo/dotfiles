@@ -24,6 +24,30 @@
     },
     "editor.fontLigatures": true,
     "editor.minimap.enabled": false,
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": ["keyword.operator", "punctuation.separator"],
+                "settings": {
+                    "fontStyle": ""
+                }
+            },
+            {
+                "scope": ["comment", "comment.block"],
+                "settings": {
+                    "fontStyle": "italic",
+                    "foreground": "#F5F"
+                }
+            },
+            {
+                "name": "envKeys",
+                "scope": "string.quoted.double.env,source.env,constant.numeric.env",
+                "settings": {
+                    "foreground": "#19354900"
+                }
+            }
+        ]
+    },
     "workbench.colorCustomizations": {
         //   "editor.foreground": "#FFFFFF",
         // "editor.guides.indentation": false
