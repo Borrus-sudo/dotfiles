@@ -1,29 +1,48 @@
 {
+    /*
+       Editor appearance config
+    */
+
     "editor.fontFamily": "Cascadia Code",
     "files.autoSave": "afterDelay",
-    "workbench.colorTheme": "Just Black",
     "editor.cursorStyle": "block",
     "workbench.sideBar.location": "right",
     "workbench.iconTheme": "vscode-icons",
     "workbench.productIconTheme": "icons-carbon",
-    "[html]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "notebook.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnPaste": true,
-    "editor.fontWeight": "normal",
-    "editor.fontSize": 14,
+    "workbench.colorTheme": "Just Black",
+    "editor.fontLigatures": true,
+    "editor.minimap.enabled": false,
     "editor.quickSuggestions": {
         "other": true,
         "comments": false,
         "strings": true
     },
-    "editor.fontLigatures": true,
-    "editor.minimap.enabled": false,
+
+    /* 
+       Formatter and Indentation config
+    */
+
+    "notebook.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "prettier.tabWidth": 4,
+    "prettier.singleQuote": true,
+    "[rust]": {
+        "editor.defaultFormatter": "jinxdash.prettier-rust"
+    },
+    "[cpp]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.fontWeight": "normal",
+    "editor.detectIndentation": false,
+    "editor.autoIndent": "advanced",
+    "editor.renderLineHighlight": "none",
+
+    /* 
+       Color Optimizations
+    */
+
     "editor.tokenColorCustomizations": {
         "textMateRules": [
             {
@@ -45,6 +64,13 @@
                 "settings": {
                     "foreground": "#19354900"
                 }
+            },
+            {
+                "scope": "entity.name",
+                "settings": {
+                    "foreground": "#B9BB25",
+                    "fontStyle": "bold"
+                }
             }
         ]
     },
@@ -57,23 +83,26 @@
         "editorLineNumber.foreground": "#292D3E"
     },
 
-    "prettier.tabWidth": 4,
-    "prettier.singleQuote": true,
+    /* 
+       Git Stuff
+    */
 
-    "[rust]": {
-        "editor.defaultFormatter": "jinxdash.prettier-rust"
-    },
-    "terminal.integrated.defaultProfile.windows": "Command Prompt",
     "git.enableSmartCommit": true,
     "git.confirmSync": false,
     "git.autofetch": true,
-    "[typescript]": {
-        "editor.defaultFormatter": "vscode.typescript-language-features"
-    },
+
+    /* 
+       Terminal Stuff
+    */
+
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "terminal.integrated.enableMultiLinePasteWarning": "never",
+
+    /* 
+       Random Stuff
+    */
+
+    "workbench.startupEditor": "none",
     "svelte.enable-ts-plugin": true,
-    "editor.renderLineHighlight": "none",
-    "[svelte]": {
-        "editor.defaultFormatter": "svelte.svelte-vscode"
-    },
     "redhat.telemetry.enabled": false
 }
