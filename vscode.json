@@ -3,19 +3,18 @@
        Editor appearance config
     */
 
-    "editor.fontFamily": "Cascadia Code",
-    "files.autoSave": "afterDelay",
+    "editor.fontFamily": "JetBrainsMono Nerd Font",
     "editor.cursorStyle": "block",
+
     "workbench.sideBar.location": "right",
     "workbench.iconTheme": "vscode-icons",
     "workbench.productIconTheme": "icons-carbon",
-    "workbench.colorTheme": "Just Black",
     "editor.fontLigatures": true,
     "editor.minimap.enabled": false,
     "editor.quickSuggestions": {
         "other": true,
         "comments": false,
-        "strings": true
+        "strings": true,
     },
 
     /* 
@@ -26,14 +25,26 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "prettier.tabWidth": 4,
     "prettier.singleQuote": true,
-    "[rust]": {
-        "editor.defaultFormatter": "jinxdash.prettier-rust"
+    "C_Cpp.clang_format_style": "{ BasedOnStyle: Google, AllowShortIfStatementsOnASingleLine: Never, AllowShortFunctionsOnASingleLine: None, AllowShortLoopsOnASingleLine: false, BreakBeforeBraces: Attach, IndentWidth: 4, PointerAlignment: Left, UseTab: Never, ColumnLimit: 100 }",
+    "[arm]": {
+        "editor.defaultFormatter": "Mikhail-Arkhipov.armassemblyeditor",
+    },
+    "[c]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools",
     },
     "[cpp]": {
-        "editor.defaultFormatter": "ms-vscode.cpptools"
+        "editor.defaultFormatter": "ms-vscode.cpptools",
+    },
+
+    "[rust]": {
+        "editor.defaultFormatter": "jinxdash.prettier-rust",
+    },
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
     },
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
+    "editor.formatOnType": true,
     "editor.fontWeight": "normal",
     "editor.detectIndentation": false,
     "editor.autoIndent": "advanced",
@@ -45,42 +56,44 @@
 
     "editor.tokenColorCustomizations": {
         "textMateRules": [
-            {
-                "scope": ["keyword.operator", "punctuation.separator"],
-                "settings": {
-                    "fontStyle": ""
-                }
-            },
+            // {
+            // "scope": ["keyword.operator", "punctuation.separator"],
+            // "settings": {
+            //     "fontStyle": ""
+            // }
+            // },
             {
                 "scope": ["comment", "comment.block"],
                 "settings": {
                     "fontStyle": "italic",
-                    "foreground": "#F5F"
-                }
+                    "foreground": "#F5F",
+                },
             },
             {
                 "name": "envKeys",
                 "scope": "string.quoted.double.env,source.env,constant.numeric.env",
                 "settings": {
-                    "foreground": "#19354900"
-                }
+                    "foreground": "#19354900",
+                },
             },
-            {
-                "scope": "entity.name",
-                "settings": {
-                    "foreground": "#B9BB25",
-                    "fontStyle": "bold"
-                }
-            }
-        ]
+            // {
+            //     "scope": "entity.name",
+            //     "settings": {
+            //         "foreground": "#B9BB25",
+            //         "fontStyle": "bold"
+            //     }
+            // }
+        ],
     },
     "workbench.colorCustomizations": {
         //   "editor.foreground": "#FFFFFF",
         // "editor.guides.indentation": false
-        "editorIndentGuide.background1": "#292D3E",
-        "editorIndentGuide.activeBackground1": "#292D3E",
-        "editorLineNumber.activeForeground": "#292D3E",
-        "editorLineNumber.foreground": "#292D3E"
+        // "editorIndentGuide.background1": "#292D3E",
+        // "editorIndentGuide.activeBackground1": "#292D3E"
+        // "editorLineNumber.activeForeground": "#292D3E",
+        // "editorLineNumber.foreground": "#292D3E"
+        "editorCursor.foreground": "#ffd52c",
+        "terminalCursor.foreground": "#ffd52c",
     },
 
     /* 
@@ -101,8 +114,36 @@
     /* 
        Random Stuff
     */
-
     "workbench.startupEditor": "none",
     "svelte.enable-ts-plugin": true,
-    "redhat.telemetry.enabled": false
+    "redhat.telemetry.enabled": false,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "workbench.colorTheme": "Gruvbox Dark Hard",
+    "python.analysis.typeCheckingMode": "basic",
+    "makefile.configureOnOpen": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "files.autoSave": "afterDelay",
+    "editor.fontSize": 13.5,
+    "[snippets]": {
+        "editor.defaultFormatter": "vscode.json-language-features",
+    },
+    "C_Cpp.default.compilerPath": "C:\\ProgramData\\mingw64\\mingw64\\bin\\g++.exe",
+    "C_Cpp.default.cppStandard": "c++23",
+    "maptz.regionfolder": {
+        "[cpp]": {
+            // --- Folding Text ---
+            "foldStart": "#pragma region [NAME]",
+            "foldEnd": "#pragma endregion",
+
+            // --- Regex to detect regions in code ---
+            "foldStartRegex": "#pragma\\s+region\\s*(.*)",
+            "foldEndRegex": "#pragma\\s+endregion",
+
+            // --- OPTIONAL: Automatically collapse these regions ---
+            "defaultFoldStartRegex": "#pragma\\s+region\\s*(.*)",
+            "collapseDefaultRegionsOnOpen": true,
+        },
+    },
+    "git.openRepositoryInParentFolders": "always",
 }
